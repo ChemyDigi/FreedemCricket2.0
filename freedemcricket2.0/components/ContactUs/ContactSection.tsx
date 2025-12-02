@@ -108,7 +108,7 @@ export default function ContactPage() {
                 borderRadius: '8px',
                 marginLeft: '-1in',
                 width: 'calc(100% + 1in)',
-                marginTop: '0in', // Moved up by 0.7 inches
+                marginTop: '-0.7in', // Moved up by 0.7 inches
               }}
             >
               <div className="mb-8">
