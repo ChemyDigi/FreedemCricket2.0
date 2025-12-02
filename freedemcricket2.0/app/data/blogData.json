@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Stadium Renovation Nearing Completion",
+    "description": "Work on our upgraded cricket stadium is almost done, featuring improved seating, refreshed boundary areas, and enhanced training zones—designed to provide players and fans with a world-class experience.",
+    "tag": "CLUB UPDATE",
+    "image": "/blog/blog1.jpg",
+    "date": "December 12, 2025"
+  },
+  {
+    "id": 2,
+    "title": "Freedom Cricket Academy Program Now Open",
+    "description": "Our new season registration is officially open! Young cricketers can now join skill-development sessions, fitness programs, and professional-level coaching to elevate their performance.",
+    "tag": "Academy Announcement",
+    "image": "/blog/blog2.jpg",
+    "date": "December 12, 2025"
+  },
+  {
+    "id": 3,
+    "title": "Mastering the art of fast balling",
+    "description": "Head Coach reveals new strategy for upcoming series focusing on powerplay control, middle-over stability, and finishing strength.",
+    "tag": "Coach Insights",
+    "image": "/blog/blog3.jpg",
+    "date": "December 12, 2025"
+  },
+  {
+    "id": 4,
+    "title": "Full Match Schedule for Next Month",
+    "description": "The upgraded cricket stadium is ready for the upcoming fixtures. Get ready for an exciting month of cricket!",
+    "tag": "Match Schedule",
+    "image": "/blog/blog2.jpg",
+    "date": "December 12, 2025"
+  },
+  {
+    "id": 5,
+    "title": "Top 5 Rising Stars This Season",
+    "description": "A spotlight on young athletes showing exceptional talent, consistency, and promise for future seasons.",
+    "tag": "Player Spotlight",
+    "image": "/blog/blog2.jpg",
+    "date": "December 12, 2025"
+  },
+  {
+    "id": 6,
+    "title": "Freedom Academy Secures Big Win in Season Opener",
+    "description": "The coaching team introduced new tactical approaches leading the team to a strong season debut victory.",
+    "tag": "Match Report",
+    "image": "/blog/blog2.jpg",
+    "date": "December 12, 2025"
+  }
+]
