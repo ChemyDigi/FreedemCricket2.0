@@ -30,13 +30,13 @@ export default function OurFacilities() {
 
   return (
     <div className="w-full bg-[#070513] py-16 md:py-24 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-stretch">
           
-          {/* Left Side - Full Image */}
-          <div className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-xl overflow-hidden">
+          {/* Left Side - Full Image matching right grid height */}
+          <div className="relative h-full min-h-[400px] rounded-xl overflow-hidden">
             <Image
-              src="/images/home/ourfacility.png" // You'll need to add this image
+              src="/images/home/ourfacility1.png"
               alt="Cricket Facilities"
               fill
               className="object-cover"
@@ -45,45 +45,45 @@ export default function OurFacilities() {
           </div>
 
           {/* Right Side - Content */}
-          <div className="flex flex-col">
+          <div className="flex flex-col h-full">
             {/* Header Section - Left Aligned */}
-            <div className="mb-8 md:mb-12">
-              <h3 className="text-[#1E84CA] text-lg md:text-xl font-bold mb-3 md:mb-4">
+            <div className="mb-6 md:mb-8">
+              <h3 className="text-[#1E84CA] text-base md:text-lg font-bold mb-3">
                 OUR FACILITIES
               </h3>
-              <h2 className="text-white text-2xl md:text-3xl lg:text-[36px] font-bold mb-4 md:mb-6 leading-tight">
+              <h2 className="text-white text-xl md:text-2xl lg:text-[28px] font-bold mb-4 leading-tight">
                 Where Comfort Meets High Performance Cricket Training.
               </h2>
-              <p className="text-white text-base md:text-lg font-medium leading-relaxed">
+              <p className="text-white text-sm md:text-base font-medium leading-relaxed">
                 Built to support every player's growth with world-class spaces designed for training, recovery, and performance.
               </p>
             </div>
 
             {/* Facilities Grid - 2x2 */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 flex-1">
               {facilities.map((facility) => (
                 <div 
                   key={facility.id} 
-                  className="bg-gradient-to-r from-[#020C24] to-[#021F3A] rounded-xl p-6 border border-white/10 backdrop-blur-sm flex flex-col h-full"
+                  className="bg-gradient-to-r from-[#020C24] to-[#021F3A] rounded-lg p-4 md:p-5 border border-white/10 backdrop-blur-sm flex flex-col"
                 >
                   {/* Emoji Icon with Circle Background */}
-                  <div className="flex flex-col items-start mb-4">
+                  <div className="flex flex-col items-start mb-3">
                     {/* Black Circle Container */}
-                    <div className="w-14 h-14 bg-black rounded-full flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-black rounded-full flex items-center justify-center mb-2">
                       {/* Red Circle Background for Emoji */}
-                      <div className="w-10 h-10 bg-[#AE111C] rounded-full flex items-center justify-center">
-                        <span className="text-xl">{facility.icon}</span>
+                      <div className="w-8 h-8 md:w-10 md:h-10 bg-[#AE111C] rounded-full flex items-center justify-center">
+                        <span className="text-base md:text-lg">{facility.icon}</span>
                       </div>
                     </div>
                     
-                    <h3 className="text-white text-lg md:text-xl font-semibold mb-3">
+                    <h3 className="text-white text-base md:text-lg font-semibold mb-2">
                       {facility.title}
                     </h3>
                   </div>
                   
                   {/* Description */}
                   <div className="flex-1">
-                    <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                    <p className="text-white/80 text-xs md:text-sm leading-relaxed">
                       {facility.description}
                     </p>
                   </div>

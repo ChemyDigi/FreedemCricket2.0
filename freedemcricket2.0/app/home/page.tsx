@@ -6,6 +6,10 @@ import OurPrograms from '@/components/Home/OurPrograms';
 import ProgramsGrid from '@/components/Home/ProgramsGrid';
 import WhyChooseUs from '@/components/Home/WhyChooseUs';
 import OurFacilities from '@/components/Home/OurFacilities';
+import Countdown from '@/components/Home/Countdown';
+import TodaysMatches from '@/components/Home/TodaysMatches';
+import CallToAction from '@/components/Home/CallToAction';
+import Testimonials from '@/components/Home/Testimonials';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -14,7 +18,14 @@ export default function Home() {
     <main className="min-h-screen font-sans relative overflow-hidden">
 
       <Navbar />
-      <HeroSection />
+      <HeroSection
+            backgroundImage="/images/home/hero.png"
+            title="Chasing"
+            highlight="Dreams"
+            
+            subtitle="-You Match Your Moment, Your Schedule-"
+            ribbonImage="/images/Gallery/Group227.png"
+        />
       <WavePlaster />
       <WhoWeAre />
       <OurValues />
@@ -22,6 +33,10 @@ export default function Home() {
       <ProgramsGrid />
       <WhyChooseUs />
       <OurFacilities />
+      <Countdown />
+      <TodaysMatches />
+      <CallToAction />
+      <Testimonials />
       <Footer />
 
     </main>
