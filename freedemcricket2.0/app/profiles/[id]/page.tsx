@@ -12,8 +12,8 @@ export default async function Profile({ params }: ProfileProps) {
     <>
       <CoachDetails id={id} />
 
-      {/* More coaches row */}
-      <MoreCoachesSection />
+      {/* This will now exclude the current profile */}
+      <MoreCoachesSection excludeId={id} />
     </>
   );
 }
