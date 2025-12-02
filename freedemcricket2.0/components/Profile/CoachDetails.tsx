@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import coachData from "@/app/data/coaches.json";
-import herobanner from "../../images/profile/coaches/herobanner.png";
+import herobanner from "/images/profile/coaches/herobanner.png";
 
 interface CoachDetailsProps {
   id: string;
