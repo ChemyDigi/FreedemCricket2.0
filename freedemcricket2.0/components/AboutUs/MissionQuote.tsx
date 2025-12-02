@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MissionQuote() {
   return (
-    <section className="w-full bg-black text-white py-20 px-6 md:px-16 lg:px-28">
+    <section className="w-full bg-[#070712] text-white py-20 px-6 md:px-16 lg:px-28">
       <div className="max-w-6xl mx-auto relative">
         {/* Left Quote Icon */}
         <div className="absolute left-0 top-0 text-[#1C76D1] text-6xl md:text-7xl select-none">
