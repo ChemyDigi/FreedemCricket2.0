@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 interface HeroSectionProps {
   backgroundImage: string;      // main hero background
@@ -66,5 +66,3 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     </section>
   );
 };
-
-export default HeroSection;
