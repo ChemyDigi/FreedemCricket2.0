@@ -16,12 +16,15 @@ const MapSection = () => {
   return (
     <section className="py-16 px-4 md:px-8 lg:px-24" style={{ backgroundColor: '#070513' }}>
       <div className="max-w-7xl mx-auto">
-        {/* Map - Full width */}
-        <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 mb-8">
-          {/* Google Map Embed */}
+        
+        {/* Spacer to push map down by 1cm (approx 38px) */}
+        <div className="h-10 md:h-12"></div>
+        
+        {/* Map Container */}
+        <div className="relative bg-gray-800 rounded-2xl overflow-hidden border border-gray-700">
           <div className="h-full min-h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462562.6511001291!2d54.94728959534871!3d25.075759466927074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s&q=Freedom+Cricket+Academy+Dubai"
+              src={mapsUrl}
               width="100%"
               height="100%"
               style={{ border: 0 }}
