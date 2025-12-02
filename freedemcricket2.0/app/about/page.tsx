@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import IntroSection from "@/components/AboutUs/IntroSection";
 import MissionQuote from "@/components/AboutUs/MissionQuote";
-import CoachesSection from "@/components/AboutUs/CoachesSection";
 import StatSection from "@/components/AboutUs/StatSection";
 import { HeroSection } from "@/components/HeroSection";
 
@@ -20,7 +19,6 @@ export default function HomePage() {
       <IntroSection />
       <MissionQuote />
       <StatSection />
-      <CoachesSection />
       <Footer />
     </>
   );
