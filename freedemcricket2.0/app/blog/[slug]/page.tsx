@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import blogPosts from "@/app/data/blogData.json"; // import the blog data
+import blogPosts from "@/app/data/blogData.json"; 
 import { ArrowLeft } from "lucide-react";
 
 interface BlogPost {
