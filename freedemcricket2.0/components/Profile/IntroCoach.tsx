@@ -7,7 +7,9 @@ import image2 from "../../public/images/profile/profileImage.jpg";
 
 const IntroCoach: FC = () => {
   return (
-    <section className="w-full bg-[#070513] text-white py-16 px-6 md:px-12 lg:px-20">
+    <section className="w-full bg-[#070513] text-white pt-56 pb-32 px-6 md:px-12 lg:px-20">
+
+
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
 
         {/* LEFT CONTENT */}
@@ -27,9 +29,7 @@ const IntroCoach: FC = () => {
             every player grow in confidence and ability.
           </p>
 
-          <button className="bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-md text-sm font-medium">
-            LEARN MORE
-          </button>
+         
         </div>
 
         {/* RIGHT IMAGE + CARD */}

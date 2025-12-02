@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import coachData from "@/app/data/coaches.json";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const CoachSection = () => {
   return (
@@ -20,17 +21,32 @@ const CoachSection = () => {
             key={coach.id}
             className="bg-[#11121F] rounded-xl overflow-hidden shadow-lg relative"
           >
-            {/* BADGE */}
-            <div className="absolute top-2 right-2 bg-red-600 text-xs font-bold text-white px-3 py-1 rounded-full">
-              NO 1
-            </div>
+
 
             {/* SOCIAL ICONS */}
-            <div className="absolute top-3 left-3 flex flex-col gap-3 text-white text-sm z-10">
-              <button className="w-8 h-8 bg-[#1C1C28] flex items-center justify-center rounded-md">F</button>
-              <button className="w-8 h-8 bg-[#1C1C28] flex items-center justify-center rounded-md">X</button>
-              <button className="w-8 h-8 bg-[#1C1C28] flex items-center justify-center rounded-md">O</button>
+            <div className="absolute top-3 left-3 flex flex-col gap-3 z-10">
+              <a
+                href="#"
+                className="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-md text-white hover:bg-blue-700 transition"
+              >
+                <FaFacebookF size={14} />
+              </a>
+
+              <a
+                href="#"
+                className="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-md text-white hover:bg-blue-700 transition"
+              >
+                <FaTwitter size={14} />
+              </a>
+
+              <a
+                href="#"
+                className="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-md text-white hover:bg-blue-700 transition"
+              >
+                <FaInstagram size={14} />
+              </a>
             </div>
+
 
             {/* IMAGE - Fixed link to use /profiles/ instead of /coaches/ */}
             <Link href={`/profiles/${coach.id}`}>
@@ -50,11 +66,11 @@ const CoachSection = () => {
               <p className="text-[#4FA3F7] text-sm mt-1">{coach.role}</p>
 
               <Link
-  href={`/profiles/${coach.id}`}
-  className="mt-4 inline-block bg-red-600 hover:bg-red-700 transition text-white text-sm font-semibold px-4 py-2 rounded-md"
->
-  Read More
-</Link>
+                href={`/profiles/${coach.id}`}
+                className="mt-4 inline-block bg-red-600 hover:bg-red-700 transition text-white text-sm font-semibold px-4 py-2 rounded-md"
+              >
+                Read More
+              </Link>
 
             </div>
           </div>
