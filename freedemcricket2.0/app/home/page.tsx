@@ -1,4 +1,4 @@
-import HeroSection from '../../components/Home/HeroSection';
+import { HeroSection } from '../../components/HeroSection';
 import WhoWeAre from '../../components/Home/WhoWeAre';
 import OurValues from '../../components/Home/OurValues';
 import WavePlaster from '../../components/Home/WavePlaster';
@@ -20,13 +20,13 @@ export default function Home() {
       <Navbar />
       <HeroSection
             backgroundImage="/images/home/hero.png"
-            title="Chasing"
+            title="Chasing "
             highlight="Dreams"
             
-            subtitle="-You Match Your Moment, Your Schedule-"
+            subtitle="—We believe cricket is more than just a game—"
             ribbonImage="/images/Gallery/Group227.png"
         />
-      <WavePlaster />
+     
       <WhoWeAre />
       <OurValues />
       <OurPrograms />

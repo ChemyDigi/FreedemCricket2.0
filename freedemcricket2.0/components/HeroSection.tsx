@@ -25,7 +25,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background image */}
       <div
         className="absolute inset-0 bg-center bg-cover opacity-100"
-        style={{ backgroundImage: url('${backgroundImage}') }}
+        style={{ backgroundImage: `url('${backgroundImage}')` }}
       />
 
       {/* Text */}
@@ -40,6 +40,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           )}
 
           {titleParts[1]}
+          
         </h1>
 
         <p className="mt-4 text-lg text-[#1E84CA] opacity-80 md:text-xl">
