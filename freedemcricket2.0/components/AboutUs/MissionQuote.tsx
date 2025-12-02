@@ -12,12 +12,12 @@ export default function MissionQuote() {
         </div>
 
         {/* Right Quote Icon */}
-        <div className="absolute right-0 bottom-0 text-[#1C76D1] text-6xl md:text-7xl select-none">
+        <div className="absolute right-0 top-50 text-[#1C76D1] text-6xl md:text-7xl select-none">
           &rdquo;
         </div>
 
         {/* Mission Statement */}
-        <p className="text-center text-2xl md:text-3xl leading-snug font-medium mt-10">
+        <p className="text-center text-3xl md:text-4xl leading-snug font-medium mt-10">
           Our mission is to equip every player with
           <br className="hidden md:block" />
           the skills, mindset, and coaching they
@@ -28,7 +28,14 @@ export default function MissionQuote() {
         {/* Founder Info */}
         <div className="flex items-center gap-6 mt-14">
           {/* Profile Circle */}
-          <div className="w-24 h-24 rounded-full bg-[#D9D9D9]" />
+          <div className="w-24 h-24 rounded-full bg-[#D9D9D9] overflow-hidden relative">
+            <Image
+              src="/images/AboutUs/Hiran.jpg"
+              alt="Hiran Gunawardhana"
+              fill
+              className="object-cover"
+            />
+          </div>
 
           {/* Name + Title */}
           <div>
