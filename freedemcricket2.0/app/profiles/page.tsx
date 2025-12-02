@@ -1,4 +1,3 @@
-
 import IntroCoach from "@/components/Profile/IntroCoach";
 import CoachSection from "@/components/Profile/CoachSection";
 export default function Profile() {
@@ -8,5 +7,4 @@ export default function Profile() {
       <CoachSection/>
     </main>
   );
-
 }
