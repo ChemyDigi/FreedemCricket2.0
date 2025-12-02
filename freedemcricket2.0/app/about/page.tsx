@@ -15,7 +15,7 @@ export default function HomePage() {
         title="Match Schedule"
         highlight="Schedule"
         subtitle="-You Match Your Moment, Your Schedule-"
-        ribbonImage="/images/Gallery/Group227.png"
+        ribbonImage="/images/Gallery/Group2.png"
       />
       <IntroSection />
       <MissionQuote />
