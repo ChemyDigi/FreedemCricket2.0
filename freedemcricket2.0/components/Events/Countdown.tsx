@@ -42,7 +42,7 @@ export const Countdown: React.FC = () => {
 
   return (
     <section
-      className="relative w-full py-28 mt-32 flex items-center justify-center bg-[#101014] overflow-hidden"
+      className="relative w-full py-28 mt-32 flex items-center justify-center bg-[#10101f] overflow-hidden"
       style={{
         backgroundImage: `url('/Images/Events/match1.png')`,
         backgroundSize: "cover",
@@ -50,7 +50,7 @@ export const Countdown: React.FC = () => {
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 "></div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-8">
 
@@ -80,7 +80,7 @@ export const Countdown: React.FC = () => {
             {labels.map((label) => (
               <div
                 key={label}
-                className="bg-black/40 backdrop-blur-md px-6 py-4 rounded-xl border border-white/10 text-center"
+                className="bg-black/20 backdrop-blur-md px-6 py-4 rounded-xl border border-white/10 text-center"
               >
                 <p className="text-3xl md:text-5xl font-bold text-white">
                   {timeLeft[label as keyof typeof timeLeft]}

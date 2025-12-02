@@ -1,4 +1,4 @@
-import { HeroSection } from "@/components/Events/HeroSection";
+import { HeroSection } from "@/components/HeroSection";
 import { Countdown } from "@/components/Events/Countdown";
 import { TodaysMatches } from "@/components/Events/TodaysMatches";
 import { LatestResults } from "@/components/Events/LatestResults";
@@ -7,7 +7,13 @@ import { LatestResults } from "@/components/Events/LatestResults";
 export default function EventsPage() {
 return (
 <main className="w-full min-h-screen bg-[#0B0B0D] text-white">
-<HeroSection />
+<HeroSection
+            backgroundImage="/images/Events/EventHero.png"
+            title="Match Schedule"
+            highlight="Schedule"
+            subtitle="-You Match Your Moment, Your Schedule-"
+            ribbonImage="/images/Events/Ribbon.png"
+        />
 <Countdown />
 <TodaysMatches />
 <LatestResults />
