@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import blogData from "@/app/data/blogData.json";
 
 export default function BlogCard() {
@@ -8,9 +9,10 @@ export default function BlogCard() {
     <section className="py-14 bg-[#070513]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         {blogData.map((post) => (
-          <div
+          <Link
             key={post.id}
-            className="bg-[#202322] rounded-xl overflow-hidden shadow-lg border border-[#1e1e2d] flex flex-col"
+            href={`/blog/${post.id}`} // links to slug page
+            className="bg-[#202322] rounded-xl overflow-hidden shadow-lg border border-[#1e1e2d] flex flex-col cursor-pointer"
           >
             {/* Image */}
             <div className="relative h-56 w-full">
@@ -20,7 +22,6 @@ export default function BlogCard() {
                 fill
                 className="object-cover"
               />
-
               {/* Tag */}
               <span className="absolute top-3 right-3 text-xs bg-red-600 text-white px-3 py-1 rounded-full font-semibold">
                 {post.tag}
@@ -32,19 +33,16 @@ export default function BlogCard() {
               <h3 className="text-white text-lg font-semibold mb-2 leading-snug">
                 {post.title}
               </h3>
-
               <p className="text-gray-300 text-sm leading-relaxed">
                 {post.description}
               </p>
             </div>
 
-            {/* Footer with fixed height */}
+            {/* Footer */}
             <div className="text-[#727272] text-xs flex items-center gap-2 px-5 py-3 border-t border-[#727272] h-12">
               <span>{post.date}</span>
-              <span>•</span>
-              <span>No Comments</span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
