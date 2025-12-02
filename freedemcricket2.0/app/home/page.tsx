@@ -22,9 +22,9 @@ export default function Home() {
             backgroundImage="/images/home/hero.png"
             title="Chasing "
             highlight="Dreams"
-            
+      
             subtitle="—We believe cricket is more than just a game—"
-            ribbonImage="/images/Gallery/Group227.png"
+            ribbonImage="/images/home/ribbon.png"
         />
      
       <WhoWeAre />
