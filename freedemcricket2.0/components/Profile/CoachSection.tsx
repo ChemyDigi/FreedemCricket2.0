@@ -49,12 +49,13 @@ const CoachSection = () => {
               <h3 className="text-lg font-bold">{coach.name}</h3>
               <p className="text-[#4FA3F7] text-sm mt-1">{coach.role}</p>
 
-              <Link 
-                href={`/profiles/${coach.id}`}
-                className="mt-4 inline-block text-sm text-blue-400 hover:underline"
-              >
-                Read More →
-              </Link>
+              <Link
+  href={`/profiles/${coach.id}`}
+  className="mt-4 inline-block bg-red-600 hover:bg-red-700 transition text-white text-sm font-semibold px-4 py-2 rounded-md"
+>
+  Read More
+</Link>
+
             </div>
           </div>
         ))}
