@@ -40,7 +40,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           )}
 
           {titleParts[1]}
-          
         </h1>
 
         <p className="mt-4 text-lg text-[#1E84CA] opacity-80 md:text-xl">
