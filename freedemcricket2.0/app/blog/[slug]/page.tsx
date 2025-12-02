@@ -100,11 +100,12 @@ export default async function BlogPage({ params }: BlogPageProps) {
     <div className="min-h-screen bg-white">
       <HeroSection
         title={post.title}
-        backgroundImage="/images/blog1.jpg"
+        backgroundImage="/images/blog/blog10.jpg"
         date={post.date}
         author={post.author}
         readTime={post.readTime}
       />
+      
 
       {/* Featured Image */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
