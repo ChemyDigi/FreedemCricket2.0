@@ -1,11 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Trainers from "@/components/AboutUs/Trainers";
 
 export default function HomePage() {
-    return (
-        <>
-            <Navbar />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Trainers />
+      <Navbar />
+      <Footer />
+    </>
+  );
 }
