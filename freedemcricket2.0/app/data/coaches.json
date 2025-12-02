@@ -1,0 +1,125 @@
+[
+  {
+    "id": "hiran-gunawardana",
+    "name": "Hiran Gunawardana",
+    "role": "Founder / Head Coach",
+    "image": "/Images/profile/coaches/1.jpg",
+    "bio": "With over 15 years of coaching excellence in Sri Lanka and the UAE, Hiran has built a reputation for transforming teams and producing top-performing players. Renowned for his technical mastery and player development skills, he continues to inspire cricketers to reach their highest potential.",
+    "qualifications": [
+      "ICC Level 02"
+    ],
+    "experience": [
+      "Head Coach - Old Anthony’s Cricket Club, Sri Lanka (2022, Div 1)",
+      "St. Servatius College, Sri Lanka (2019–2021)",
+      "Head Coach Junior Cricket - Dharmapala College, Sri Lanka (2018–2019)",
+      "Head Coach - St. Johns College, Sri Lanka (2015–2017)",
+      "Head Coach - Siri Piyarathana College (2014–2015)"
+    ],
+    "achievements": [
+      "Nalanda College 1999–2000 Best Batsman / Colours Man",
+      "Dharmapala College 4 Years Colours Man",
+      "1000+ runs in two Sri Lankan Div 1 College Cricket seasons consecutively (1997–1998)",
+      "U19 World Cup Squad (2000)",
+      "Bloomfield Cricket Club Div 1 (2000–2006)"
+    ],
+    "specialization": [
+      "Player Development",
+      "Batting & Fielding Strategy",
+      "Team Leadership",
+      "Talent Identification",
+      "High-Performance Training",
+      "Match Analysis",
+      "Coaching Philosophy & Mentorship"
+    ]
+  },
+
+  {
+    "id": "himasha-kumarage",
+    "name": "Himasha Kumarage",
+    "role": "Ladies Head Coach",
+    "image": "/Images/profile/coaches/1.jpg",
+    "qualifications": [
+      "ICC Level 01 Coaching Certificate",
+      "ICC Level 01 Umpiring Certificate"
+    ],
+    "experience": [
+      "3 years of experience with Freedem Cricket Academy UAE"
+    ],
+    "achievements": [
+      "Represented the UAE National Development Squad"
+    ],
+    "specialization": [
+      "Under-10 Coaching",
+      "Girls’ Cricket Coaching & Development",
+      "Scoring & Match Handling",
+      "Tournament Organizing"
+    ]
+  },
+
+  {
+    "id": "prajeev-jansze",
+    "name": "Prajeev Jansze",
+    "role": "Coach",
+    "image": "/Images/profile/coaches/1.jpg",
+    "qualifications": [
+      "BCCSL Level 1",
+      "ICC Level 1",
+      "ICC Level 2"
+    ],
+    "experience": [
+      "14+ years of coaching across Sri Lanka, New Zealand, Qatar, and UAE",
+      "Has coached players at academy, school, and competitive levels"
+    ],
+    "achievements": [
+      "New Zealand: Hazlett Trophy Champions (2012) – Wellington",
+      "UAE: 2× CBFS Championships",
+      "3× Four Nations Championships",
+      "3× Gulf Cup Championships",
+      "1× Four Nations Runner-Up"
+    ],
+    "specialization": [
+      "Specialist Batting Coach",
+      "Player Skill Development",
+      "Match Preparation",
+      "Mental Toughness Mentorship"
+    ]
+  },
+
+  {
+    "id": "gihan-lakshitha",
+    "name": "W.A. Gihan Lakshitha De Silva",
+    "role": "Assistant Coach / Throwdown Specialist",
+    "image": "/Images/profile/coaches/1.jpg",
+    "experience": [
+      "6 months coaching at Anula Vidyalaya, Nugegoda",
+      "6 months coaching at Lumbini College, Colombo 05"
+    ],
+    "achievements": [
+      "Awarded School Colours – 2023"
+    ],
+    "specialization": [
+      "Under-10 Coaching",
+      "Player Fundamentals"
+    ]
+  },
+
+  {
+    "id": "anuhas-dasanayaka",
+    "name": "Anuhas Dasanayaka",
+    "role": "Coach",
+    "image": "/Images/profile/coaches/1.jpg",
+    "qualifications": [
+      "ICC Level 1 Qualified"
+    ],
+    "experience": [
+      "4 years of coaching experience"
+    ],
+    "specialization": [
+      "Batting Specialist",
+      "Wicket-Keeping Specialist",
+      "Fielding Skills",
+      "Fitness & Conditioning",
+      "Mental Toughness"
+    ]
+  }
+]
