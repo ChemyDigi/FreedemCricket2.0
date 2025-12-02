@@ -4,7 +4,10 @@ import HeroSection from "@/components/FAQS/HeroSection";
 import CallToAction from "@/components/FAQS/CallToAction";
 import BenefitsSection from "@/components/FAQS/BenefitsSection";
 import WaveCurve from "@/components/FAQS/WaveCurve";
-import QuestionsSection from "@/components/FAQS/QuestionsSection";
+
+import FAQSection from "@/components/FAQS/QuestionsSection";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function CricketPage() {
   return (
@@ -13,7 +16,10 @@ export default function CricketPage() {
       <CallToAction />
       <BenefitsSection />
       <WaveCurve />
-      <QuestionsSection />
+      
+      <FAQSection />
+      <Navbar />
+      <Footer />
     </main>
   );
 

@@ -68,7 +68,7 @@ export default function CricketAcademyProgram() {
                   </h2>
                   
                   <p className="text-white text-[18px] font-poppins leading-relaxed max-w-xl">
-                    For far away, behind the word mountains, far from the countries Volcillo and Constantinia, there live the blind texts. Separated they live in Bookmontagrove right at the coast Far far away, behind the word mountains, far from the countries Volcillo and Constantinia, there live the blind texts. Separated they live in Bookmontagrove right at the coast Far far away, behind the word mountains, far from the countries Volcillo and Constantinia, there live the blind texts. Separated they live in Bookmontagrove right at the coast
+                    For far away, behind the word mountains, far from the countries Volcillo and Constantinia, there live the blind texts. Separated they live in Bookmontagrove right at the coast Far far away, behind the word mountains, far from the countries Volcillo and Constantinia, there live the blind texts. 
                   </p>
                 </div>
               </div>
