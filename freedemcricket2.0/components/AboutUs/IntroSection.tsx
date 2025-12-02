@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function IntroSection() {
   return (
-    <section className="w-full bg-[#070513] text-white px-6 md:px-16 lg:px-24 py-24 flex flex-col gap-24">
+    <section className="w-full bg-[#070513] text-white px-6 md:px-16 lg:px-24 pt-20 flex flex-col gap-24">
       {/* Top Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="flex flex-col gap-4">
