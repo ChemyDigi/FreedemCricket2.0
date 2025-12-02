@@ -17,7 +17,7 @@ export default function MissionQuote() {
         </div>
 
         {/* Mission Statement */}
-        <p className="text-center text-3xl md:text-4xl leading-snug font-medium mt-10">
+        <p className="text-center text-2xl md:text-3xl leading-snug font-medium mt-10">
           Our mission is to equip every player with
           <br className="hidden md:block" />
           the skills, mindset, and coaching they
