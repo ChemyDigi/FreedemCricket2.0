@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { FC } from "react";
-import image1 from "../../public/Images/profile/aboutus1.jpg";
-import image2 from "../../public/Images/profile/profileImage.jpg";
+import image1 from "../../public/images/profile/aboutus1.jpg";
+import image2 from "../../public/images/profile/profileImage.jpg";
 
 const CoachSection: FC = () => {
   return (

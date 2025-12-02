@@ -3,7 +3,8 @@
     "id": "hiran-gunawardana",
     "name": "Hiran Gunawardana",
     "role": "Founder / Head Coach",
-    "image": "/Images/profile/coaches/1.jpg",
+    "image": "/images/profile/coaches/1.jpg",
+    "readmoreimage": "/images/profile/coaches/hiran.png",
     "bio": "With over 15 years of coaching excellence in Sri Lanka and the UAE, Hiran has built a reputation for transforming teams and producing top-performing players. Renowned for his technical mastery and player development skills, he continues to inspire cricketers to reach their highest potential.",
     "qualifications": [
       "ICC Level 02"
@@ -32,12 +33,12 @@
       "Coaching Philosophy & Mentorship"
     ]
   },
-
   {
     "id": "himasha-kumarage",
     "name": "Himasha Kumarage",
     "role": "Ladies Head Coach",
-    "image": "/Images/profile/coaches/1.jpg",
+    "image": "/images/profile/coaches/1.jpg",
+    "readmoreimage": "/images/profile/coaches/hiran.png",
     "qualifications": [
       "ICC Level 01 Coaching Certificate",
       "ICC Level 01 Umpiring Certificate"
@@ -55,12 +56,12 @@
       "Tournament Organizing"
     ]
   },
-
   {
     "id": "prajeev-jansze",
     "name": "Prajeev Jansze",
     "role": "Coach",
-    "image": "/Images/profile/coaches/1.jpg",
+    "image": "/images/profile/coaches/1.jpg",
+    "readmoreimage": "/images/profile/coaches/hiran.png",
     "qualifications": [
       "BCCSL Level 1",
       "ICC Level 1",
@@ -84,12 +85,12 @@
       "Mental Toughness Mentorship"
     ]
   },
-
   {
     "id": "gihan-lakshitha",
     "name": "W.A. Gihan Lakshitha De Silva",
     "role": "Assistant Coach / Throwdown Specialist",
-    "image": "/Images/profile/coaches/1.jpg",
+    "image": "/images/profile/coaches/1.jpg",
+    "readmoreimage": "/images/profile/coaches/hiran.png",
     "experience": [
       "6 months coaching at Anula Vidyalaya, Nugegoda",
       "6 months coaching at Lumbini College, Colombo 05"
@@ -102,12 +103,12 @@
       "Player Fundamentals"
     ]
   },
-
   {
     "id": "anuhas-dasanayaka",
     "name": "Anuhas Dasanayaka",
     "role": "Coach",
-    "image": "/Images/profile/coaches/1.jpg",
+    "image": "/images/profile/coaches/1.jpg",
+    "readmoreimage": "/images/profile/coaches/hiran.png",
     "qualifications": [
       "ICC Level 1 Qualified"
     ],
