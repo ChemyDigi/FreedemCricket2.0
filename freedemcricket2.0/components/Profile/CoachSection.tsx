@@ -27,7 +27,7 @@ const CoachSection = () => {
             <div className="absolute top-3 left-3 flex flex-col gap-3 z-10">
               <a
                 href="#"
-                className="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-md text-white hover:bg-blue-700 transition"
+                className="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-md text-white hover:bg-[#4FA3F7] transition"
               >
                 <FaFacebookF size={14} />
               </a>

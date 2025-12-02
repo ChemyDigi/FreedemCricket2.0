@@ -8,8 +8,6 @@ import image2 from "../../public/images/profile/profileImage.jpg";
 const IntroCoach: FC = () => {
   return (
     <section className="w-full bg-[#070513] text-white pt-56 pb-32 px-6 md:px-12 lg:px-20">
-
-
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
 
         {/* LEFT CONTENT */}
@@ -22,35 +20,40 @@ const IntroCoach: FC = () => {
 
           <p className="text-gray-300 leading-relaxed">
             Cricket is a game of patience, precision, and sharp thinking—and our
-            coach brings all three to the field with unmatched expertise. With
-            years of experience in competitive cricket, he transforms raw talent
-            into disciplined performers. His approach combines advanced training
-            techniques, tactical awareness, and personalized guidance to help
-            every player grow in confidence and ability.
+            coach brings all three with unmatched expertise...
           </p>
-
-         
         </div>
 
         {/* RIGHT IMAGE + CARD */}
-        <div className="relative flex-1">
+        <div className="relative flex-1 w-full">
+
           {/* MAIN IMAGE */}
           <div className="rounded-xl overflow-hidden shadow-lg">
             <Image
-              src={image1}// replace with your image path
+              src={image1}
               alt="Coach"
               width={700}
               height={500}
-              className="object-cover"
+              className="object-cover w-full h-auto"
             />
           </div>
 
           {/* OVERLAY CARD */}
-          <div className="absolute -bottom-35 left-76 bg-[#2E3231]/90 backdrop-blur-lg p-6 rounded-lg w-[85%] md:w-[70%]">
+          <div
+            className="
+              bg-[#2E3231]/90 backdrop-blur-lg p-6 rounded-lg 
+              
+              /* Default: appears BELOW image on mobile/tablet */
+              static mt-6
+
+              /* Large screens & above: overlay on image */
+              lg:absolute lg:mt-0 lg:-bottom-10 lg:right-10 xl:right-20 lg:w-[70%]
+            "
+          >
             {/* Profile */}
             <div className="flex items-center gap-3 mb-3">
               <Image
-                src={image2} // replace with your profile image
+                src={image2}
                 alt="Coach Profile"
                 width={40}
                 height={40}
@@ -64,34 +67,26 @@ const IntroCoach: FC = () => {
             </div>
 
             {/* Description */}
-            <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              A master of technique and game awareness, Marcus has dedicated his
-              career to developing players who understand both the physical and
-              mental demands of modern cricket. His coaching philosophy focuses
-              on skill refinement, fitness, match temperament, and smart decision
-              making—helping the team perform under pressure and excel at every
-              level.
-            </p>
+            {/* Description */}
+<p className="text-gray-300 text-sm leading-relaxed mb-4">
+  A master of technique and game awareness. His coaching philosophy focuses
+  on skill refinement, fitness, match temperament
+  level.
+</p>
+
 
             {/* Rating */}
             <div className="flex items-center gap-3">
               <span className="text-xl font-bold">4.5</span>
 
-              <div className="flex text-yellow-400">
-                ★★★★★
-              </div>
+              <div className="flex text-yellow-400">★★★★★</div>
 
               <p className="text-xs text-gray-400">122 Reviews</p>
             </div>
 
-            {/* Social Icons */}
-            <div className="flex gap-4 mt-3 text-gray-400 text-sm">
-              <a href="#" className="hover:text-white">🌐</a>
-              <a href="#" className="hover:text-white">🐦</a>
-              <a href="#" className="hover:text-white">📸</a>
-              <a href="#" className="hover:text-white">▶️</a>
-            </div>
+             
           </div>
+
         </div>
 
       </div>
