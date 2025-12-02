@@ -7,6 +7,7 @@ export default function HomePage() {
     <>
       <Navbar />
       <MissionQuote />
+      <Navbar />
       <Footer />
     </>
   );
