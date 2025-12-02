@@ -1,6 +1,6 @@
 "use client";
 
-import HeroSection from "@/components/FAQS/HeroSection";
+import {HeroSection} from "@/components/HeroSection";
 import CallToAction from "@/components/FAQS/CallToAction";
 import BenefitsSection from "@/components/FAQS/BenefitsSection";
 import WaveCurve from "@/components/FAQS/WaveCurve";
@@ -12,7 +12,13 @@ import Footer from "@/components/Footer";
 export default function CricketPage() {
   return (
     <main className="min-h-screen bg-white">
-      <HeroSection />
+      <HeroSection
+            backgroundImage="/images/faq_images/hero.png"
+            title="FA"
+            highlight="Qs"
+            subtitle="—Clear Answers, No Extra Time Needed—"
+            ribbonImage="/images/Gallery/Group227.png"
+        />
       <CallToAction />
       <BenefitsSection />
       <WaveCurve />
