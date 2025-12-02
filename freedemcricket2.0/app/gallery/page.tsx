@@ -7,7 +7,13 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen">
         <Navbar/>
-        <HeroSection/>
+        <HeroSection
+            backgroundImage="/images/Gallery/gallerypage.png"
+            title="Match Schedule"
+            highlight="Schedule"
+            subtitle="-You Match Your Moment, Your Schedule-"
+            ribbonImage="/images/Gallery/Group227.png"
+        />
         <MasonryGallery/>
         <Footer/>
     </div>

@@ -1,32 +1,59 @@
 import React from "react";
 import Image from "next/image";
 
-export const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  backgroundImage: string;      // main hero background
+  title: string;                // main title (full text)
+  highlight?: string;           // word to highlight in different color
+  subtitle: string;             // subtitle text
+  ribbonImage: string;          // bottom ribbon PNG
+}
+
+export const HeroSection: React.FC<HeroSectionProps> = ({
+  backgroundImage,
+  title,
+  highlight,
+  subtitle,
+  ribbonImage,
+}) => {
+  // Split title for highlight
+  const titleParts = title.split(highlight ?? "");
+
   return (
     <section className="relative w-full h-[80vh] pb-[70px] flex items-center justify-center overflow-visible bg-[#0B0B0D]">
+      
       {/* Background image */}
       <div
         className="absolute inset-0 bg-center bg-cover opacity-100"
-        style={{ backgroundImage: `url('/images/Gallery/gallerypage.png')` }}
+        style={{ backgroundImage: `url('${backgroundImage}')` }}
       />
 
       {/* Text */}
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl">
-          Match <span className="text-red-500">Schedule</span>
+        <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl text-white drop-shadow-lg">
+          {titleParts[0]}
+
+          {highlight && (
+            <span className="text-red-500">
+              {highlight}
+            </span>
+          )}
+
+          {titleParts[1]}
         </h1>
+
         <p className="mt-4 text-lg text-[#1E84CA] opacity-80 md:text-xl">
-          -You Match Your Moment, Your Schedule-
+          {subtitle}
         </p>
       </div>
 
-      {/* Bottom PNG Ribbon */}
+      {/* Bottom Ribbon (PNG) */}
       <div className="absolute bottom-[-70px] left-0 w-full pointer-events-none">
         <Image
-          src="/images/Gallery/Group227.png"
+          src={ribbonImage}
           alt="Bottom Ribbon"
-          width={1920} 
-          height={240} 
+          width={1920}
+          height={240}
           className="w-full h-auto object-cover"
           style={{
             transform: "translateY(0%)",
@@ -39,5 +66,3 @@ export const HeroSection: React.FC = () => {
     </section>
   );
 };
-
-	
