@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function CricketAcademyProgram() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqItems = [
     {
@@ -33,16 +33,13 @@ export default function CricketAcademyProgram() {
     }
   ];
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#070513]">
       <div className="max-w-7xl mx-auto">
-        {/* Main title - exact text from screenshot */}
-     
-        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column - IMAGE WITH TEXT OVERLAY */}
           <div className="relative h-full">
@@ -99,13 +96,7 @@ export default function CricketAcademyProgram() {
                     <span className={`font-semibold text-[24px] ${
                       openIndex === index ? 'text-[#1E84CA]' : 'text-white'
                     }`}>
-                      {index === 0 || index === 4 ? (
-                        <span>{item.question}</span>
-                      ) : index === 1 ? (
-                        <span>{item.question}</span>
-                      ) : (
-                        <span>{item.question}</span>
-                      )}
+                      {item.question}
                     </span>
                     
                     {/* Arrow icon */}
