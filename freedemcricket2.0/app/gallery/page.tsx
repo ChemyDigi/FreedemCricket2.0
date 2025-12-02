@@ -1,11 +1,9 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import MasonryGallery from "@/components/Gallery/MansonryGallery";
 
-export default function HomePage() {
-    return (
-        <>
-            <Navbar />
-            <Footer />
-        </>
-    );
+export default function GalleryPage() {
+  return (
+    <div className="min-h-screen">
+        <MasonryGallery/>
+    </div>
+  );
 }
