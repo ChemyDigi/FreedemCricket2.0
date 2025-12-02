@@ -41,7 +41,7 @@ export default function BlogCard() {
               <div className="text-[#727272] text-xs flex items-center gap-2 pt-3 border-t border-[#727272]">
                 <span>{post.date}</span>
                 <span>•</span>
-                <span>No Comments</span>
+                <span>Comments</span>
               </div>
             </div>
           </div>
