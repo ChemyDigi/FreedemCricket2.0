@@ -1,5 +1,9 @@
-import BlogCard from "@/components/blog/BlogCard";
+import BlogCard from "@/components/Blog/BlogCard";
 
-export default function BlogPage() {
-  return <BlogCard />;
+export default function blog() {
+  return (
+    <>
+      <BlogCard />
+    </>
+  );
 }
