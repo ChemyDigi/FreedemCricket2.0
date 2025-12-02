@@ -4,6 +4,20 @@ import { notFound } from "next/navigation";
 import blogPosts from "@/app/data/blogData.json"; // import the blog data
 import { ArrowLeft } from "lucide-react";
 
+interface BlogPost {
+  id: string;
+  title: string;
+  description: string;
+  tag: string;
+  image: string;
+  date: string;
+  author?: string;
+  readTime?: string;
+  fullContent: string;
+  midImage?: string;
+  contentAfterImage?: string;
+}
+
 interface HeroSectionProps {
   backgroundImage?: string;
   title?: string;
@@ -14,7 +28,7 @@ interface HeroSectionProps {
 
 // ✅ Hero Section Component
 const HeroSection = ({
-  backgroundImage = "/images/blog1.jpg",
+  backgroundImage = "/images/blog/blog1.jpg",
   title = "Voice from the field",
   date,
   author,
@@ -78,7 +92,7 @@ interface BlogPageProps {
 
 export default async function BlogPage({ params }: BlogPageProps) {
   const { slug } = await params;
-  const post = blogPosts.find((p) => p.id === slug);
+  const post = blogPosts.find((p) => p.id === slug) as BlogPost | undefined;
 
   if (!post) return notFound();
 
@@ -88,6 +102,8 @@ export default async function BlogPage({ params }: BlogPageProps) {
         title={post.title}
         backgroundImage="/images/blog1.jpg"
         date={post.date}
+        author={post.author}
+        readTime={post.readTime}
       />
 
       {/* Featured Image */}
@@ -116,25 +132,30 @@ export default async function BlogPage({ params }: BlogPageProps) {
             className="text-gray-700 leading-loose text-[15px] sm:text-[16px] text-justify tracking-wide space-y-6 blog-content"
             dangerouslySetInnerHTML={{ __html: post.fullContent }}
           />
+
+          {/* Mid Article Image */}
+          {post.midImage && (
+            <div className="my-10 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src={post.midImage}
+                alt={`${post.title} - additional visual`}
+                width={1200}
+                height={600}
+                className="w-full h-64 sm:h-80 md:h-96 object-cover"
+              />
+            </div>
+          )}
+
+          {/* Content After Mid Image */}
+          {post.contentAfterImage && (
+            <div
+              className="text-gray-700 leading-loose text-[15px] sm:text-[16px] text-justify tracking-wide space-y-6 blog-content"
+              dangerouslySetInnerHTML={{ __html: post.contentAfterImage }}
+            />
+          )}
         </article>
       </section>
     </div>
   );
 }
 
-// ✅ SEO Metadata
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const post = blogPosts.find((p) => p.id === slug);
-
-  if (!post) {
-    return {
-      title: "Blog Post Not Found",
-    };
-  }
-
-  return {
-    title: `${post.title} | Freedom Cricket Academy`,
-    description: post.description,
-  };
-}
